@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20 text-center">
       <img
-        src="/profile.jpg"
+        src={`${import.meta.env.BASE_URL}profile.jpg`}
         alt="Rajesh Raman Bosak"
         className="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 shadow-lg"
       />

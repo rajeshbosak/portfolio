@@ -67,7 +67,7 @@ export default function Navbar({ theme, setTheme }) {
           <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
             {/* RR */}
             <img
-              src="/profile.jpg"
+              src={`${import.meta.env.BASE_URL}profile.jpg`}
               alt="Rajesh Raman Bosak"
               className=" rounded-full mx-auto border-1 border-blue-500 shadow-lg"
             />

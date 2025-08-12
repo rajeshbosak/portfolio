@@ -23,10 +23,9 @@ export default function About() {
             d="M5.121 17.804A8 8 0 1118.879 6.196M15 12h.01M9 12h.01"
           />
         </svg> */}
-
         <img
-          src="/profile.jpg"
-          alt="Rajesh Raman Bosak"
+          src={`${import.meta.env.BASE_URL}profile.jpg`}
+          alt="RR"
           className="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 shadow-lg"
         />
       </div>
