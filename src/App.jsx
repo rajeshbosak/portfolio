@@ -13,7 +13,6 @@ import {
 import ParticlesBackground from "./components/ParticlesBackground";
 import MovingDotsBackground from "./components/MovingDotsBackground";
 import Footer from "./components/Footer";
-import Profile from "./components/Profile";
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -41,7 +40,6 @@ export default function App() {
           <Route path="/resume" element={<ResumeSection />} />
           <Route path="/about" element={<About />} />
           <Route path="/socials" element={<Socials />} />
-          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
       <Footer />
