@@ -8,14 +8,11 @@ import {
   About,
   ResumeSection,
   Socials,
-  Footer,
   NotFound,
 } from "./pages";
 import ParticlesBackground from "./components/ParticlesBackground";
 import MovingDotsBackground from "./components/MovingDotsBackground";
-import { Navbar } from "./components";
-// import Footer from "./pages/Footer";
-// import NotFound from "./pages/NotFound";
+import { Navbar, Footer } from "./components";
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -36,7 +33,8 @@ export default function App() {
 
       <main className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-16 relative z-10">
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route index element={<Hero />} />
+          {/* <Route path="" element={<Hero />} /> */}
           <Route path="/career" element={<CareerPath />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
