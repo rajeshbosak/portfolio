@@ -51,10 +51,11 @@ export default function About() {
       <a
         href={`${import.meta.env.BASE_URL}resume.pdf`}
         download
-        className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg"
+        className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg text-sm sm:text-base"
       >
         <FiDownload /> Download Resume
       </a>
+
       {/* Divider */}
       <hr className="w-24 border-gray-600 my-6" />
       {/* Hobbies & Contact */}

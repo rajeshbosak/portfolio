@@ -23,18 +23,18 @@ export default function Hero() {
           using LLMs.
         </p>
 
-        <div className="mt-8 flex items-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
             href={`${import.meta.env.BASE_URL}resume.pdf`}
             download
-            className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg"
+            className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg text-sm sm:text-base"
           >
             <FiDownload /> Download Resume
           </a>
 
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white/6 font-semibold"
+            className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-3 rounded-full bg-white/6 font-semibold text-sm sm:text-base"
           >
             <FiEye /> View Projects
           </a>

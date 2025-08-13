@@ -14,11 +14,11 @@ export default function ResumeSection() {
             Full Stack Software Engineer — 6+ years
           </div>
 
-          <div className="mt-4 flex gap-3">
+          <div className="mt-4 flex flex-wrap gap-2 sm:gap-3">
             <a
               href={`${import.meta.env.BASE_URL}resume.pdf`}
               download
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold"
+              className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold text-sm sm:text-base"
             >
               <FiDownload /> Download
             </a>
@@ -26,7 +26,7 @@ export default function ResumeSection() {
               href="https://www.linkedin.com/in/rajeshraman63/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/6"
+              className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-full bg-white/6 text-sm sm:text-base"
             >
               <FiLinkedin /> LinkedIn
             </a>
