@@ -172,7 +172,7 @@ export default function Skills() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl font-bold mb-2">Skills</h2>
+        <h2 className="text-2xl font-bold mb-2 text-foreground">Skills</h2>
         <p className="text-muted-foreground mb-10">
           A snapshot of technologies I use daily.
         </p>
@@ -181,14 +181,14 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-white/5 dark:bg-black/20 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center hover:scale-105 hover:-translate-y-1 transition-all duration-300"
+              className="card-glass flex flex-col items-center justify-center hover:scale-105 hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 src={skill.icon}
                 alt={skill.name}
                 className="w-16 h-16 object-contain mb-4 transition-transform duration-300 hover:rotate-6"
               />
-              <h3 className="text-lg font-semibold text-center">
+              <h3 className="text-lg font-semibold text-center text-foreground">
                 {skill.name}
               </h3>
             </div>
