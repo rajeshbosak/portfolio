@@ -13,6 +13,7 @@ import {
 import ParticlesBackground from "./components/ParticlesBackground";
 import MovingDotsBackground from "./components/MovingDotsBackground";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/resume" element={<ResumeSection />} />
           <Route path="/about" element={<About />} />
           <Route path="/socials" element={<Socials />} />
+          <Route path="*" element={<NotFound />} /> {/* catch-all route */}
         </Routes>
       </main>
       <Footer />
