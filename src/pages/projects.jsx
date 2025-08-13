@@ -21,8 +21,8 @@ const projects = [
 export default function Projects() {
   return (
     <div id="projects">
-      <h3 className="text-2xl font-semibold">Projects</h3>
-      <p className="mt-2 text-slate-400">
+      <h3 className="text-2xl font-semibold text-foreground">Projects</h3>
+      <p className="mt-2 text-muted-foreground">
         Highlighted projects across commerce and AI.
       </p>
 
@@ -33,9 +33,11 @@ export default function Projects() {
             href={p.link}
             className="card-glass hover:scale-[1.02] transition-transform p-6"
           >
-            <div className="font-semibold text-lg">{p.name}</div>
-            <div className="text-sm text-slate-400 mt-2">{p.desc}</div>
-            <div className="mt-4 text-indigo-300 font-medium">View Repo →</div>
+            <div className="font-semibold text-lg text-foreground">
+              {p.name}
+            </div>
+            <div className="text-sm text-muted-foreground mt-2">{p.desc}</div>
+            <div className="mt-4 font-medium text-primary">View Repo →</div>
           </a>
         ))}
       </div>

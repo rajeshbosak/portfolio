@@ -8,7 +8,7 @@ export default function Socials() {
         href="https://www.linkedin.com/in/rajeshraman63/"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-300 hover:text-white"
+        className="text-muted-foreground hover:text-foreground transition-colors duration-200"
       >
         <FiLinkedin size={20} />
       </a>
@@ -16,7 +16,7 @@ export default function Socials() {
         href="https://github.com/rajeshbosak"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-300 hover:text-white"
+        className="text-muted-foreground hover:text-foreground transition-colors duration-200"
       >
         <FiGithub size={20} />
       </a>
@@ -24,13 +24,13 @@ export default function Socials() {
         href="https://leetcode.com/u/rajeshraman_/"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-300 hover:text-white"
+        className="text-muted-foreground hover:text-foreground transition-colors duration-200"
       >
         LeetCode
       </a>
       <a
         href="mailto:rajeshraman63@gmail.com"
-        className="text-slate-300 hover:text-white"
+        className="text-muted-foreground hover:text-foreground transition-colors duration-200"
       >
         <FiMail size={20} />
       </a>
