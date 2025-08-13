@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ultra-Storefront",
+    "desc": "White-labelled commerce platform with microfrontends and multilingual support.",
+    "link": "#"
+  },
+  {
+    "name": "Equinox Studio",
+    "desc": "Low-code platform for commerce experiences and demos.",
+    "link": "#"
+  },
+  {
+    "name": "COBOL→Java Automation",
+    "desc": "LLM-powered conversion tooling and frontend demos.",
+    "link": "#"
+  },
+  {
+    "name": "MCPServerDemo",
+    "desc": "MCP demo using Claude and TypeScript to fetch weather data via api.weather.gov, showcasing @modelcontextprotocol/sdk.",
+    "link": "https://github.com/rajeshbosak/MCPServerDemo"
+  }
+]

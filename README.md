@@ -1,7 +1,7 @@
 # Rajesh Raman – Portfolio 🚀
 
 My personal portfolio website built with **React**, **Vite**, **TailwindCSS**, and modern UI/UX enhancements.  
-It showcases my career path, skills, projects, resume, social profiles, and more — with beautiful animations, glassmorphism effects, and responsive design.
+It showcases my career path, skills, projects, resume, and more — with beautiful animations, glassmorphism effects, and responsive design.
 
 ## 🌐 Live Demo
 
@@ -17,7 +17,6 @@ It showcases my career path, skills, projects, resume, social profiles, and more
   - Technical Skills
   - Projects
   - Resume
-  - Social Profiles
   - About Me
 - ⚡ **Built with Vite** for lightning-fast performance
 
