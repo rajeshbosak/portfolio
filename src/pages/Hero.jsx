@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FiDownload } from "react-icons/fi";
+import { FiDownload, FiEye } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -36,7 +36,7 @@ export default function Hero() {
             href="#projects"
             className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white/6 font-semibold"
           >
-            View Projects
+            <FiEye /> View Projects
           </a>
         </div>
 
