@@ -1,46 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import { FiMenu, FiSun, FiMoon } from "react-icons/fi";
-
-// export default function Navbar({ theme, setTheme }) {
-//   return (
-//     <nav className="flex items-center justify-between py-4">
-//       <div className="flex items-center gap-3">
-//         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-white">
-//           RR
-//         </div>
-//         <div>
-//           <div className="font-semibold text-lg">Rajesh Raman Bosak</div>
-//           <div className="text-xs text-slate-400 dark:text-slate-400">
-//             Full-stack • GenAI • System Design
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="hidden md:flex items-center gap-6">
-//         <Link to="/career">Career Path</Link>
-//         <Link to="/skills">Skills</Link>
-//         <Link to="/projects">Projects</Link>
-//         <Link to="/resume">Resume</Link>
-//         <Link to="/about">About</Link>
-//         <Link to="/socials">Social Profiles</Link>
-//       </div>
-
-//       <button
-//         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-//         className="p-2 rounded-lg bg-white/10 dark:bg-black/20"
-//         aria-label="Toggle Theme"
-//       >
-//         {theme === "dark" ? <FiSun /> : <FiMoon />}
-//       </button>
-
-//       <div className="md:hidden p-2 rounded-lg bg-white/6">
-//         <FiMenu />
-//       </div>
-//     </nav>
-//   );
-// }
-
 // src/components/Navbar.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
@@ -98,13 +55,30 @@ export default function Navbar({ theme, setTheme }) {
         {/* Theme Toggle */}
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="p-2 rounded-full hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+          className="p-2 rounded-full transition-all duration-500 transform hover:scale-110 hover:rotate-6 cursor-pointer"
         >
-          {theme === "light" ? (
-            <Moon className="w-5 h-5" />
-          ) : (
-            <Sun className="w-5 h-5" />
-          )}
+          <span
+            key={theme}
+            className="flex items-center justify-center animate-themeSwitch"
+          >
+            {theme === "light" ? (
+              <Moon className="w-5 h-5 " />
+            ) : (
+              <Sun className="w-5 h-5 " />
+            )}
+          </span>
+
+          {/* Extra CSS for animation */}
+          <style>{`
+            @keyframes themeSwitch {
+              0% { transform: scale(0.6) rotate(-90deg); opacity: 0; }
+              50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+              100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            }
+            .animate-themeSwitch {
+              animation: themeSwitch 0.4s ease-out;
+            }
+          `}</style>
         </button>
       </div>
     </nav>
