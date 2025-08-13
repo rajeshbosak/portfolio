@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy-gh": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
