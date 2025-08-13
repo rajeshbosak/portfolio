@@ -1,22 +1,5 @@
 import React from "react";
-
-const projects = [
-  {
-    name: "Ultra-Storefront",
-    desc: "White-labelled commerce platform with microfrontends and multilingual support.",
-    link: "#",
-  },
-  {
-    name: "Equinox Studio",
-    desc: "Low-code platform for commerce experiences and demos.",
-    link: "#",
-  },
-  {
-    name: "COBOL→Java Automation",
-    desc: "LLM-powered conversion tooling and frontend demos.",
-    link: "#",
-  },
-];
+import projects from "../data/projects.json";
 
 export default function Projects() {
   return (

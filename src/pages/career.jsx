@@ -1,19 +1,8 @@
 import React from "react";
 import { FiBriefcase } from "react-icons/fi";
+import experiences from "../data/experiences.json";
 
 export default function CareerPath() {
-  const experiences = [
-    {
-      company: "Infosys",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg",
-      role: "Specialist Programmer L2",
-      start: "Aug 2019",
-      end: "Current",
-      description:
-        "Working on modern web applications using React, Node.js, Angular, and cloud-based solutions. Focused on scalable architectures, system design, and microservices.",
-    },
-  ];
-
   return (
     <section>
       <div className="max-w-6xl mx-auto px-6">
