@@ -11,7 +11,6 @@ export default function Navbar({ theme, setTheme }) {
     { name: "Projects", path: "/projects" },
     { name: "Resume", path: "/resume" },
     { name: "About", path: "/about" },
-    { name: "Social Profiles", path: "/socials" },
   ];
 
   return (

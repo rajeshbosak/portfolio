@@ -7,7 +7,6 @@ import {
   Projects,
   About,
   ResumeSection,
-  Socials,
   NotFound,
 } from "./pages";
 import ParticlesBackground from "./components/ParticlesBackground";
@@ -38,7 +37,6 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<ResumeSection />} />
           <Route path="/about" element={<About />} />
-          <Route path="/socials" element={<Socials />} />
           <Route path="*" element={<NotFound />} /> {/* fallback route */}
         </Routes>
       </main>
