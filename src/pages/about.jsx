@@ -60,14 +60,14 @@ export default function About() {
       <hr className="w-24 border-gray-600 my-6" />
       {/* Hobbies & Contact */}
       <div className="grid md:grid-cols-2 gap-6 w-full max-w-3xl">
-        <div className="backdrop-blur-md bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg">
+        <div className="card-glass tilt-hover backdrop-blur-md bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg">
           <h3 className="text-lg font-semibold mb-2">Hobbies</h3>
           <p className="text-gray-300 text-sm">
             Writing blog posts, reading whitepapers, full-stack development,
             competitive programming.
           </p>
         </div>
-        <div className="backdrop-blur-md bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg">
+        <div className="card-glass tilt-hover backdrop-blur-md bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg">
           <h3 className="text-lg font-semibold mb-2">Contact</h3>
           <p className="text-gray-300 text-sm">📧 rajeshraman63@gmail.com</p>
           <p className="text-gray-300 text-sm">

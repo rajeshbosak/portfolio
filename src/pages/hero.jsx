@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-8 flex gap-3 items-center">
-          <div className="card-glass">
+          <div className="card-glass tilt-hover">
             <div className="text-xs text-slate-300">Current</div>
             <div className="font-semibold">
               Generative AI — COBOL → Java automation
