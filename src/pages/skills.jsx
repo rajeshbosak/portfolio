@@ -1,6 +1,7 @@
 import React from "react";
+import skills from "../data/skills.json"; // import the JSON file
 
-const skills = [
+const skills1 = [
   // DSA
 
   {
