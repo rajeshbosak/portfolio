@@ -13,7 +13,7 @@ export default function Footer() {
       </p> */}
 
       <p className="text-gray-800 dark:text-gray-200 flex items-center justify-center gap-1">
-        © {new Date().getFullYear()} — Built with <FaHeart />
+        © {new Date().getFullYear()} — Developed with <FaHeart />
       </p>
     </footer>
   );
