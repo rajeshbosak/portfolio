@@ -1,5 +1,7 @@
 import React from "react";
 
+import { FiDownload } from "react-icons/fi";
+
 export default function About() {
   return (
     <section className="flex flex-col items-center text-center space-y-6 py-12">
@@ -7,7 +9,6 @@ export default function About() {
       {/* <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-pink-500 to-purple-500 flex items-center justify-center text-white text-4xl font-bold shadow-lg">
         RR
       </div> */}
-
       <div className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +30,6 @@ export default function About() {
           className="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 shadow-lg"
         />
       </div>
-
       {/* Name & Title */}
       <div>
         <h1 className="text-3xl font-bold">Rajesh Raman Bosak</h1>
@@ -49,16 +49,14 @@ export default function About() {
 
       {/* Resume Button */}
       <a
-        href="/resume.pdf"
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
         download
-        className="px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-medium transition-colors shadow-md"
+        className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg"
       >
-        Download Resume
+        <FiDownload /> Download Resume
       </a>
-
       {/* Divider */}
       <hr className="w-24 border-gray-600 my-6" />
-
       {/* Hobbies & Contact */}
       <div className="grid md:grid-cols-2 gap-6 w-full max-w-3xl">
         <div className="backdrop-blur-md bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg">

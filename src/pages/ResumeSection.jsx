@@ -1,5 +1,5 @@
 import React from "react";
-import { FiDownload } from "react-icons/fi";
+import { FiDownload, FiLinkedin } from "react-icons/fi";
 
 export default function ResumeSection() {
   return (
@@ -16,7 +16,7 @@ export default function ResumeSection() {
 
           <div className="mt-4 flex gap-3">
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold"
             >
@@ -28,7 +28,7 @@ export default function ResumeSection() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/6"
             >
-              LinkedIn
+              <FiLinkedin /> LinkedIn
             </a>
           </div>
         </div>

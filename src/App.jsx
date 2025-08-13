@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
-  Navbar,
   Hero,
   Skills,
   CareerPath,
@@ -9,11 +8,14 @@ import {
   About,
   ResumeSection,
   Socials,
-} from "./components";
+  Footer,
+  NotFound,
+} from "./pages";
 import ParticlesBackground from "./components/ParticlesBackground";
 import MovingDotsBackground from "./components/MovingDotsBackground";
-import Footer from "./components/Footer";
-import NotFound from "./pages/NotFound";
+import { Navbar } from "./components";
+// import Footer from "./pages/Footer";
+// import NotFound from "./pages/NotFound";
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");

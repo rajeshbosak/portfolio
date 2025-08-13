@@ -25,7 +25,7 @@ export default function Hero() {
 
         <div className="mt-8 flex items-center gap-4">
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download
             className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 font-semibold shadow-lg"
           >
