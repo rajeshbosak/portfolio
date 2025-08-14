@@ -62,6 +62,10 @@
       {
         "name": "Microfrontends",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg"
+      },
+      {
+        "name": "Android Dev",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
       }
     ]
   },
@@ -99,7 +103,7 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
       },
       {
-        "name": "SQL",
+        "name": "MySQL",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
       },
       {
@@ -179,15 +183,6 @@
       {
         "name": "LangGraph",
         "icon": "https://simpleicons.org/icons/langgraph.svg"
-      }
-    ]
-  },
-  {
-    "category": "Others",
-    "items": [
-      {
-        "name": "Android Dev",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
       }
     ]
   }

@@ -17,6 +17,11 @@ export default function Skills() {
     );
   };
 
+  // Certificates section
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-6">
@@ -89,10 +94,10 @@ export default function Skills() {
           </p>
 
           <div className="space-y-4">
-            {certificates.map((cert, idx) => (
+            {visibleCertificates.map((cert, idx) => (
               <div
                 key={idx}
-                className="card-glass  tilt-hover p-4 flex justify-between items-center rounded-xl"
+                className="card-glass tilt-hover p-4 flex justify-between items-center rounded-xl"
               >
                 {/* Left side - Title & Issuer */}
                 <div>
@@ -125,6 +130,18 @@ export default function Skills() {
               </div>
             ))}
           </div>
+
+          {/* See More / See Less Button */}
+          {certificates.length > 3 && (
+            <div className="mt-6 text-center">
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="text-indigo-400 cursor-pointer hover:text-indigo-300 underline underline-offset-4 transition-colors"
+              >
+                {showAll ? "See Less" : "See More"}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
