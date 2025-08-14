@@ -1,46 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import skills from "../data/skills.json";
 import certificates from "../data/certificates.json";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 export default function Skills() {
+  // By default, all categories open
+  const [openCategories, setOpenCategories] = useState(
+    skills.map((cat) => cat.category)
+  );
+
+  const toggleCategory = (category) => {
+    setOpenCategories((prev) =>
+      prev.includes(category)
+        ? prev.filter((c) => c !== category)
+        : [...prev, category]
+    );
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-6">
+        {/* Skills Header */}
         <h2 className="text-2xl font-bold mb-2 text-foreground">Skills</h2>
         <p className="text-muted-foreground mb-10">
           A collection of technologies I've worked with.
         </p>
 
-        {skills.map((category) => (
-          <div key={category.category} className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">{category.category}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              {category.items.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="card-glass flex flex-col items-center justify-center hover:scale-105 hover:-translate-y-1 transition-all duration-300"
-                >
-                  <img
-                    src={skill.icon}
-                    alt={skill.name}
-                    className={`w-16 h-16 object-contain mb-4 transition-transform duration-300 hover:rotate-6 ${
-                      ["GitHub", "LangGraph", "Strapi", "Express.js"].includes(
-                        skill.name
-                      )
-                        ? "dark:invert"
-                        : ""
-                    }`}
-                  />
-                  <h4 className="text-lg font-semibold text-center text-foreground">
-                    {skill.name}
-                  </h4>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+        {/* Skills Categories */}
+        {skills.map((category) => {
+          const isOpen = openCategories.includes(category.category);
 
-        {/* Certificates Section */}
+          return (
+            <div key={category.category} className="mb-6">
+              {/* Category Header */}
+              <button
+                onClick={() => toggleCategory(category.category)}
+                className="w-full flex justify-between items-center cursor-pointer text-xl font-semibold py-3 border-b border-white/10"
+              >
+                {category.category}
+                {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+              </button>
+
+              {/* Category Items */}
+              <div
+                className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                  isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-3 overflow-visible">
+                  {category.items.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="card-glass tilt-hover flex flex-col items-center justify-center"
+                      // className="card-glass flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300"
+                    >
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className={`w-16 h-16 object-contain mb-4 transition-transform duration-300 hover:rotate-6 ${
+                          [
+                            "GitHub",
+                            "LangGraph",
+                            "Strapi",
+                            "Express.js",
+                          ].includes(skill.name)
+                            ? "dark:invert"
+                            : ""
+                        }`}
+                      />
+                      <h4 className="text-lg font-semibold text-center text-foreground">
+                        {skill.name}
+                      </h4>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
         {/* Certificates Section */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-2 text-foreground">
@@ -54,7 +92,7 @@ export default function Skills() {
             {certificates.map((cert, idx) => (
               <div
                 key={idx}
-                className="card-glass p-4 flex justify-between items-center rounded-xl"
+                className="card-glass  tilt-hover p-4 flex justify-between items-center rounded-xl"
               >
                 {/* Left side - Title & Issuer */}
                 <div>

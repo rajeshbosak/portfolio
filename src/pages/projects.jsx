@@ -11,11 +11,7 @@ export default function Projects() {
 
       <div className="mt-6 grid md:grid-cols-3 gap-6">
         {projects.map((p) => (
-          <a
-            key={p.name}
-            href={p.link}
-            className="card-glass hover:scale-[1.02] transition-transform p-6"
-          >
+          <a key={p.name} href={p.link} className="card-glass tilt-hover">
             <div className="font-semibold text-lg text-foreground">
               {p.name}
             </div>

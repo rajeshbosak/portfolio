@@ -1,5 +1,30 @@
 [
   {
+    "category": "Languages",
+    "items": [
+      {
+        "name": "C++",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "Java",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+      },
+      {
+        "name": "Python",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      }
+    ]
+  },
+  {
     "category": "Frontend",
     "items": [
       {
@@ -13,14 +38,6 @@
       {
         "name": "Angular",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-      },
-      {
-        "name": "TypeScript",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-      },
-      {
-        "name": "JavaScript",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
       },
       {
         "name": "Redux",
@@ -63,6 +80,20 @@
         "name": "Microservices",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
       },
+      { "name": "Strapi", "icon": "https://simpleicons.org/icons/strapi.svg" },
+      {
+        "name": "REST APIs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "items": [
       {
         "name": "MongoDB",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
@@ -74,20 +105,7 @@
       {
         "name": "GraphQL",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
-      },
-      {
-        "name": "REST APIs",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-      },
-      {
-        "name": "Python",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-      },
-      {
-        "name": "Java (Spring Boot)",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-      },
-      { "name": "Strapi", "icon": "https://simpleicons.org/icons/strapi.svg" }
+      }
     ]
   },
   {
@@ -167,10 +185,6 @@
   {
     "category": "Others",
     "items": [
-      {
-        "name": "C++",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-      },
       {
         "name": "Android Dev",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
