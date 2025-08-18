@@ -1,22 +1,42 @@
 [
   {
-    "name": "Ultra-Storefront",
-    "desc": "White-labelled commerce platform with microfrontends and multilingual support.",
-    "link": ""
-  },
-  {
-    "name": "Equinox Studio",
-    "desc": "Low-code platform for commerce experiences and demos.",
-    "link": ""
-  },
-  {
     "name": "COBOL→Java Automation",
-    "desc": "LLM-powered conversion tooling and frontend demos.",
+    "desc": "LLM-powered automation tool converting COBOL to Java. Designed agent-based workflows for tokenization, business rule extraction, and code generation.",
+    "tags": ["LangGraph", "LLMs", "Azure AI", "Python", "Angular"],
     "link": ""
   },
   {
     "name": "MCPServerDemo",
-    "desc": "MCP demo using Claude and TypeScript to fetch weather data via api.weather.gov, showcasing @modelcontextprotocol/sdk.",
+    "desc": "Demo MCP server using Claude + TypeScript to fetch weather data from api.weather.gov, showcasing @modelcontextprotocol/sdk for AI-driven integrations.",
+    "tags": ["TypeScript", "Claude AI", "MCP", "Node.js"],
     "link": "https://github.com/rajeshbosak/MCPServerDemo"
+  },
+  {
+    "name": "Ultra-Storefront",
+    "desc": "White-labelled, scalable commerce platform built with microfrontends, multilingual support, and integrated payment solutions (Braintree, Cybersource, GPay).",
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "AWS",
+      "STRAPI",
+      "i18n",
+      "Microfrontend"
+    ],
+    "link": ""
+  },
+  {
+    "name": "Equinox Studio",
+    "desc": "Low-code/no-code platform for personalized commerce experiences. Built schema-driven rendering, hyper-localization, and delivered 10+ client demos accelerating adoption by 30%.",
+    "tags": [
+      "Angular",
+      "Vanilla JS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Jenkins",
+      "Git"
+    ],
+    "link": ""
   }
 ]
