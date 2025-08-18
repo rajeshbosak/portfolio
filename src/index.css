@@ -172,11 +172,42 @@ body {
 }
 
 /* tilt hover */
-.tilt-hover {
+/* .tilt-hover {
   transition: transform 0.28s cubic-bezier(0.22, 0.9, 0.28, 1);
 }
 .tilt-hover:hover {
   transform: translateY(-6px) scale(1.01);
+} */
+
+/* Tilt + Glow Hover */
+/* .tilt-hover {
+  transition: transform 0.28s cubic-bezier(0.22, 0.9, 0.28, 1),
+    box-shadow 0.28s ease-in-out;
+}
+
+.tilt-hover:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2); 
+} */
+
+/* Tilt + Glow Hover - Theme Adaptive */
+.tilt-hover {
+  transition: transform 0.28s cubic-bezier(0.22, 0.9, 0.28, 1),
+    box-shadow 0.28s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tilt-hover:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4); /* Indigo glow - more visible in dark */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .tilt-hover:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4); /* Blue glow - visible in light */
+  }
 }
 
 /* progress bar base (override colors via utility classes) */

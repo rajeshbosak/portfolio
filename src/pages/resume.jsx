@@ -7,7 +7,7 @@ export default function ResumeSection() {
       <h3 className="text-2xl font-semibold text-foreground">Resume</h3>
       <p className="mt-2 text-muted-foreground">PDF and a short snapshot.</p>
 
-      <div className="mt-6 card-glass flex flex-col md:flex-row items-center gap-6">
+      <div className="mt-6 card-glass tilt-hover flex flex-col md:flex-row items-center gap-6">
         <div className="flex-1">
           <div className="font-semibold text-foreground">
             Rajesh Raman Bosak Bosak

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "AWS Certified Cloud Practitioner",
+    "issuer": "Amazon Web Services Training and Certification",
+    "duration": "10/2024 – 10/2027",
+    "link": "https://www.credly.com/badges/7421b634-2edb-440d-b276-d65b83f45a17/public_url"
+  },
+  {
+    "name": "Infosys Certified AWS Developer Associate",
+    "issuer": "Infosys",
+    "duration": "09/2024 – Present",
+    "link": ""
+  },
+  {
+    "name": "Infosys Certified Node Developer",
+    "issuer": "Infosys",
+    "duration": "10/2024 – Present",
+    "link": ""
+  },
+  {
+    "name": "Infosys Certified React Web Developer",
+    "issuer": "Infosys",
+    "duration": "09/2024 – Present",
+    "link": ""
+  },
+  {
+    "name": "Infosys Certified MySQL Associate",
+    "issuer": "Infosys",
+    "duration": "09/2024 – Present",
+    "link": ""
+  },
+  {
+    "name": "Infosys Certified CPP Programmer",
+    "issuer": "Infosys",
+    "duration": "11/2019 – Present",
+    "link": ""
+  }
+]
