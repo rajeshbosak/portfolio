@@ -1,5 +1,6 @@
 import React from "react";
 import { FiDownload, FiLinkedin } from "react-icons/fi";
+import profile from "../data/profile.json";
 
 export default function ResumeSection() {
   return (
@@ -10,7 +11,7 @@ export default function ResumeSection() {
       <div className="mt-6 card-glass tilt-hover flex flex-col md:flex-row items-center gap-6">
         <div className="flex-1">
           <div className="font-semibold text-foreground">
-            Rajesh Raman Bosak Bosak
+            {profile.fullName}
           </div>
           <div className="text-sm text-muted-foreground">
             Full Stack Software Engineer — 6+ years
@@ -25,7 +26,7 @@ export default function ResumeSection() {
               <FiDownload /> Download
             </a>
             <a
-              href="https://www.linkedin.com/in/rajeshraman63/"
+              href={profile.links.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-full bg-background/50 text-foreground font-semibold text-sm sm:text-base"

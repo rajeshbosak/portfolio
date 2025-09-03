@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Sun, Moon, Menu, X } from "lucide-react";
+import profile from "../data/profile.json";
 
 export default function Navbar({ theme, setTheme }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,11 @@ export default function Navbar({ theme, setTheme }) {
           <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
             <img
               src={`${import.meta.env.BASE_URL}profile.jpg`}
-              alt="Rajesh Raman Bosak"
+              alt={profile.fullName}
               className="rounded-full mx-auto border border-blue-500 shadow-lg"
             />
           </div>
-          Rajesh
+          {profile.site_name}
         </NavLink>
 
         {/* Desktop Nav */}
